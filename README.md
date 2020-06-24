@@ -1,27 +1,16 @@
 # GoogleAuthAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+You can look https://jeerjmin.github.io/angular-google-auth
 
-## Development server
+## Run local
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Create A Google App https://console.developers.google.com/apis/credentials
+2. Set project and add your localhost address to whitelist
+3. Create .env file and set up
 
-## Code scaffolding
+GOOGLE_CLIENT_ID=<You google client id> that you can get via google console
+DISCOVERY_DOCS="['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']"
+SCOPES="https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.photos.readonly"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+4. Finally go to root project directory and run yarn install, yarn run config for setup angular environment, yarn start
