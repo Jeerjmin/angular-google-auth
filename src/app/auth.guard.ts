@@ -21,16 +21,15 @@ export class AuthGuard implements CanActivate {
       const isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
 
       if (!isSignedIn) {
-        this.router.navigate(['/google']);
+        this.router.navigate(['/auth']);
       }
       return isSignedIn;
     } else {
       return this.googleService.initClient()
         .then(() => {
           const isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
-
           if (!isSignedIn) {
-            this.router.navigate(['/google']);
+            this.router.navigate(['/auth']);
           }
           return isSignedIn;
         });
