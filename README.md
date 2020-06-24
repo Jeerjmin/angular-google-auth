@@ -9,7 +9,9 @@ You can look https://jeerjmin.github.io/angular-google-auth
 3. Create .env file and set up
 
 GOOGLE_CLIENT_ID=<You google client id> that you can get via google console
+  
 DISCOVERY_DOCS="['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']"
+
 SCOPES="https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.photos.readonly"
 
 
