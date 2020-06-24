@@ -122,6 +122,13 @@
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.11.tgz#2c7b6e584df0ba0884d05f01fa7ab86c1fdd1c5e"
   integrity sha512-VKAExUnEJfo1PDQKagpx2pn+QMZCsPLRiADzTdl4U0VPylK3ALbn4ZNY9UbdwyE2plitz++LkH7sEGGfh+PNrQ==
 
+"@angular/cdk@^9.2.4":
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.4.tgz#8413958bd275e4c34be3b96f56444671dd30ba93"
+  integrity sha512-iw2+qHMXHYVC6K/fttHeNHIieSKiTEodVutZoOEcBu9rmRTGbLB26V/CRsfIRmA1RBk+uFYWc6UQZnMC3RdnJQ==
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~9.1.9":
   version "9.1.9"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-9.1.9.tgz#e9caced7c107c65075fe1b4c42a4712a5aeb992c"
@@ -185,6 +192,11 @@
   version "9.1.11"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.1.11.tgz#fa246144649236613598a0471aa7f39b60f986b5"
   integrity sha512-t4WHrh6ot1r8zdV+3fJz7g9rCok77c9CiIevhH2dR/idxD+HtFR0wqmcBQzsn+rNVB0f0TiSHDrj+TeELIFyWw==
+
+"@angular/material@^9.2.4":
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-9.2.4.tgz#2666ef606fbb88d60f8e2f18c5e4f94a3dd572d8"
+  integrity sha512-LkoTXE6B0slvMhvfZDdPWaz4yaYLkaAp5VSPunI9pxGsPxzqEV9e210wC1/sjG/76Nk8Ep7/2z9XKac8Q9bMwA==
 
 "@angular/platform-browser-dynamic@~9.1.11":
   version "9.1.11"
@@ -1065,6 +1077,30 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
+"@types/gapi.auth2@^0.0.52":
+  version "0.0.52"
+  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.52.tgz#da859ac501e48f97f212ee4782840e8c9adc5082"
+  integrity sha512-Q9OEsiLXQ3fWv93voIDr4tXpiO0zNFx2RPK+9wj21LY3ydyx/CtoXQgbf+6iNSTuyHUDF4J/c74maKghtPbbaA==
+  dependencies:
+    "@types/gapi" "*"
+
+"@types/gapi.client.drive@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@types/gapi.client.drive/-/gapi.client.drive-3.0.7.tgz#7cc24362769fc5b4c1d987699721199a20db569f"
+  integrity sha512-g7utqVfe6vJVaDbJJSmEJ2FOSzoQCUOEx5/T/dA1frKRYCJJFZJWHMxLAv/aPZapyMotCmN7S0fq7WgGkvVC3A==
+  dependencies:
+    "@types/gapi.client" "*"
+
+"@types/gapi.client@*", "@types/gapi.client@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@types/gapi.client/-/gapi.client-1.0.3.tgz#6e61f4bd210440208c1ca8a64d1d1a0263e8f9ff"
+  integrity sha512-XhJ45zhedkqXln75Y0XZAFmHFHNu6zCGe9EyPiu5a20Q7XnsEENR3dnUqbYvp7w9e6vjXW+uKGqb3z/ezZijDg==
+
+"@types/gapi@*", "@types/gapi@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.39.tgz#bc7fa8cd0cb175b36e3609790fb2ed73a33f6881"
+  integrity sha512-R1TZeZbvvbIC60DBJMhuOEivQHzOQtzl3uMDOOENTYQTSSDB6oEMpJo8HVPOTWivdUTbyEcB5qQOVr/JCKRlCQ==
+
 "@types/glob@^7.1.1":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.2.tgz#06ca26521353a545d94a0adc74f38a59d232c987"
@@ -1100,10 +1136,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
   integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
 
-"@types/node@^12.11.1":
-  version "12.12.47"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.47.tgz#5007b8866a2f9150de82335ca7e24dd1d59bdfb5"
-  integrity sha512-yzBInQFhdY8kaZmqoL2+3U5dSTMrKaYcb561VU+lDzAYvqt+2lojvBEy+hmpSNuXnPTx7m9+04CzWYOUqWME2A==
+"@types/node@^14.0.14":
+  version "14.0.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
+  integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -3097,6 +3133,11 @@ dot-prop@^5.2.0:
   integrity sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
@@ -6029,6 +6070,11 @@ parse5@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA==
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parseqs@0.0.5:
   version "0.0.5"

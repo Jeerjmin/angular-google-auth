@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import {GoogleService} from './google/services/google.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'google-auth-angular';
+  constructor(
+    private googleService: GoogleService
+  ) {
+  }
 }

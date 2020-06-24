@@ -14,7 +14,8 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "types": ["node","gapi","gapi.auth2", "gapi.client", "gapi.client.drive"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
